@@ -42,5 +42,20 @@ Steps (Please follow in the same order)
 3. Constituent Type (Person vs Company): For this, I observed 2 cases:  <a>. If first and last name → Person   <b>. If only company name → Company. But we had few rows where first name, last name and company name all are given, so in that case I assumed constituent type as Person
 4. Date Formatting: I assumpted valid dates are in "YYYY-MM-DD" format and invalid or missing dates are left as empty strings.
 5. Background information: For this I assumed if title and/or gender were empty fields ==> skipped.
+6. Lifetime donation: I calculated it as sum of all paid donations
 
+
+## Clarifying Questions for Client
+1. If first and last name are given and If only company name is also given, in that case , if we assume constituent type as"Person" then should we generate company name for this patron id? Please check row 6 (Patron id: 5034)
+
+
+## QA / Verification Process
+1. In the python code, i have used print() to validate if my data frame had correct and expected answer. I have commented it out in my code, but if you want to validate , just uncomment it. Also I have checked few things manually since the dataset is not too large (Like duplicate ids, name formatting)
+
+
+## AI  vs Me
+
+I explored the input data on my own. Understood what needs to be done, explored all sheets and visualize the columns and how they can be mapped. After reading the instructions, i understood how to handle patron IDs (we wanted only unique one), how to clean email format, how to decide what could be the CB Constituent Type based on first/last names and what could be all possible assumptions.
+
+I took the help of AI to revisite the regex patten structure that was need for email formatting, date formatting, processing excel sheets, troubleshooting, correcting the syntax errors.
 
