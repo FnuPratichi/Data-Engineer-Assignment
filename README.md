@@ -32,4 +32,15 @@ Steps (Please follow in the same order)
 5. Run these two file to get the output sheet
    -  python process_cb.py
    -  python process_tags.py
-  
+
+
+
+## Assumptions
+
+1. Duplicate Patron IDs:  Found 2 duplicate IDs and assumed and kept only the first occurrence to maintain unique records.
+2. First Name and Last Name: I assumed these names should be in "First Name" and "Last Name" form , so i cleaned it and kept first letter as capital.
+3. Constituent Type (Person vs Company): For this, I observed 2 cases:  <a>. If first and last name → Person   <b>. If only company name → Company. But we had few rows where first name, last name and company name all are given, so in that case I assumed constituent type as Person
+4. Date Formatting: I assumpted valid dates are in "YYYY-MM-DD" format and invalid or missing dates are left as empty strings.
+5. Background information: For this I assumed if title and/or gender were empty fields ==> skipped.
+
+
