@@ -21,15 +21,15 @@ Steps (Please follow in the same order)
    
 1. Clone this repo using command =>  git clone https://github.com/FnuPratichi/Data-Engineer-Assignment.git
    
-3. Go to this directory => cd Data-Engineer-Assignment
+2. Go to this directory => cd Data-Engineer-Assignment
    
-5. Create a virtual environment using below commands in the order :
-         - python3 -m venv venv             => This command will create a venv named virtual env folder 
-         - source venv/bin/activate         => This command will activate your venv
+3. Create a virtual environment using below commands in the order :
+- python3 -m venv venv             => This command will create a venv named virtual env folder 
+- source venv/bin/activate         => This command will activate your venv
    
-6. Install dependenies using command  =>    pip install -r requirements.txt
+4. Install dependenies using command  =>    pip install -r requirements.txt
    
-7. Run these two file to get the output sheet
+5. Run these two file to get the output sheet
    -  python process_cb.py
    -  python process_tags.py
   
